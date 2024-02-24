@@ -54,3 +54,4 @@ There is a simple test suite included to help verify function of the functions. 
 
 I wouldn't mind extending this to be more than just a CLI but I have a lot going on and haven't gotten back to it.  Adding it to the list of incomplete projects sitting here in github.
 
+I would also like to add the option to query google maps APIs for local restaurants, specifying a review level, in a city and get a list of restaurants that way.  The configs are still useful for your local favorites, but this would make the program a little more useful if you're traveling.
