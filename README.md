@@ -8,11 +8,49 @@ It also defaults to the entire list of configs unless you specify one, so for us
 
 The `--help` flag will give instructions on these flags via the command line as well.
 
-# Tests
+Example
+```
+➜  restaurant-roulette git:(main) ✗ python3 restaurant_roulette.py
+INFO:root:list of restaurants:
+['Chopsticks', 'Taki Steakhouse', "Charlotte's Kitchen", 'Kathmandu', '5 Borough Bagels', 'Mi Patria', 'Hana Ramen Sushi', "Persi's Biryani Indian Grill", 'Grazianos', 'Lucky Lotus', 'Exile Brewing', 'Big Grove Brewing', 'Lua Brewing', 'The Cheese Bar', 'Olympic Flame', 'Royal Mile', 'Malo', 'Open Sesame', 'Hessen Haus', 'Guadalajara', 'Flame Cantina', 'El Mocajete', 'Silk Elephant', "Magee's Pub", 'Wasabi', 'District 36', 'Flavory Bistro', 'Waterfront', "Georgio's Greek Grill", 'Wig and Pen', 'Trailside Tap', "Siam's Table", "Ben's Burgers"]
+INFO:root:random choices:
+["Charlotte's Kitchen"]
+```
+
+## Flags
+
+The flags
+```
+➜  restaurant-roulette git:(main) ✗ python3 restaurant_roulette.py --help
+usage: restaurant_roulette.py [-h] [--config CONFIG] [--results RESULTS]
+
+options:
+  -h, --help         show this help message and exit
+  --config CONFIG    Name of the city config to load
+  --results RESULTS  How many options to return
+```
+Altering how many results to return
+```
+➜  restaurant-roulette git:(main) ✗ python3 restaurant_roulette.py --results 3
+INFO:root:list of restaurants:
+['Chopsticks', 'Taki Steakhouse', "Charlotte's Kitchen", 'Kathmandu', '5 Borough Bagels', 'Mi Patria', 'Hana Ramen Sushi', "Persi's Biryani Indian Grill", 'Grazianos', 'Lucky Lotus', 'Exile Brewing', 'Big Grove Brewing', 'Lua Brewing', 'The Cheese Bar', 'Olympic Flame', 'Royal Mile', 'Malo', 'Open Sesame', 'Hessen Haus', 'Guadalajara', 'Flame Cantina', 'El Mocajete', 'Silk Elephant', "Magee's Pub", 'Wasabi', 'District 36', 'Flavory Bistro', 'Waterfront', "Georgio's Greek Grill", 'Wig and Pen', 'Trailside Tap', "Siam's Table", "Ben's Burgers"]
+INFO:root:random choices:
+['District 36', 'Chopsticks', '5 Borough Bagels']
+```
+Limiting the selection to one configuration file
+```
+➜  restaurant-roulette git:(main) ✗ python3 restaurant_roulette.py --config ankeny
+INFO:root:list of restaurants:
+['Guadalajara', 'Flame Cantina', 'El Mocajete', 'Silk Elephant', "Magee's Pub", 'Wasabi', 'District 36', 'Flavory Bistro', 'Waterfront', "Georgio's Greek Grill", 'Wig and Pen', 'Trailside Tap', "Siam's Table", "Ben's Burgers"]
+INFO:root:random choices:
+['Flavory Bistro']
+```
+
+## Tests
 
 There is a simple test suite included to help verify function of the functions.  It could probably use more work.
 
-# The future?
+## The future?
 
 I wouldn't mind extending this to be more than just a CLI but I have a lot going on and haven't gotten back to it.  Adding it to the list of incomplete projects sitting here in github.
 
