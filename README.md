@@ -1,6 +1,6 @@
 # Restaurant Roulette
 
-Chooses a number of results from a local config file.  In this cases, lists of restaurants in the Des Moines metro area. Original intent was to break deadlocks when deciding where to eat when going out on dates.
+Chooses a number of results from a local config file.  In this case, lists of restaurants in the Des Moines metro area. Original intent was to break deadlocks when deciding where to eat when going out on dates.
 
 The script defaults to pulling one result unless you issue the flag `--results` followed by a number.
 
